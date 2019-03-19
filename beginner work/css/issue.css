@@ -1,0 +1,125 @@
+/*
+* @Author: lyh
+* @Date:   2019-03-18 19:35:11
+* @Last Modified by:   lyh
+* @Last Modified time: 2019-03-18 19:35:32
+*/
+body{
+        		background-color: #7fafa8;
+        	}
+	        *{
+	        	margin:0;
+	        	padding:0;
+	        	list-style:none;
+	        }
+			.nav{
+				height: 30px;
+				width: 100%;
+				background-color: #ccc;
+				font-size:14px;
+			}
+			.nav .mid{
+				width: 1000px;
+				height: 30px;
+				margin:0 auto;
+			}
+			.weather{
+				float:left;
+				height: 30px;
+				line-height: 30px;
+			}
+			.weather :nth-child(2){
+				color:red;
+				cursor:pointer;
+			}
+			.dl{
+				float:right;
+				width: 200px;
+				height: 30px;
+				line-height: 30px;
+			}
+			.dl>.denglu,.dl>.zhuce,.dl>.shop{
+				float:left;
+			}
+			.shop{
+				margin-left:52px;
+				padding-right:30px;
+				background:url(images/购物车.png) no-repeat right center;
+				background-size:25px 25px ;
+			}
+			a{
+				text-decoration:none;
+			}
+			.dl a{
+				padding:2px;
+			}
+			/* 商品信息 */
+			#from_button{
+				width: 800px;
+				border-radius:14px;
+				margin:100px auto;
+			}
+			.from{
+				height: 550px;
+				position:relative;
+				border-radius:10px;
+				border:2px solid #616292;
+			}
+			.from .title{
+				margin-left:60px;
+				font-size:20px;
+				font-weight:bold;
+				color:skyblue;
+			}
+			.from .mid-from{
+				margin-top:30px;
+			}
+			.from .mid-from .trade{
+				width: 320px;
+				height: 26px;
+				margin-top:3px;
+				margin-left:11px;
+				border-radius:12px;
+			}
+			.from p{
+				height: 40px;
+				line-height: 40px;
+				margin-top:10px;
+			}
+			.from p label{
+				margin-left:60px;
+				margin-right:30px;
+			}
+			.from .intro{
+				float:left;
+			}
+			.from .radio{
+				margin-left:6px;
+			}
+			.clear{
+				clear:both;
+			}
+			.file{
+				margin-left:43px;
+			}
+
+			#area{
+				width: 500px;
+				height: 180px;
+				margin-left:-19px;
+				border-radius:14px;
+			}
+			.picture{
+				position:absolute;
+				top:377px;
+				margin-left:60px;
+			}
+			.submit{
+				position:absolute;
+				top:454px;
+				height: 40px;
+				width: 108px;
+				margin-left:344px;
+				background-color: #56bbad;
+				border-radius:20px;
+			}

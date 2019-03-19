@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery/HTML5雪花飞舞</title>
+<script type="text/javascript" src="js/jquery-latest.min.js"></script>
+<script src='js/snowfall.jquery.js'></script>
+<link rel="stylesheet" href="css/styles.css">
+</link>
+</head>
+<body class="darkBg">
+	<input type="button" id="clear" value="clear"/>
+	<input type="button" id="round" value="Rounded"/>
+	<input type="button" id="shadows" value="Shadows"/>
+	<input type="button" id="roundshadows" value="Rounded Shadows"/>
+
+</body>
+<script type='text/javascript'> 	
+		$(document).ready(function(){
+			$(document).snowfall();
+			
+			$("#clear").click(function(){
+				$(document).snowfall('clear'); 
+			});
+			
+			$("#round").click(function(){
+				document.body.className  = "darkBg";
+				$('.collectonme').hide();
+				$(document).snowfall('clear');
+				$(document).snowfall({round : true, minSize: 5, maxSize:8}); 
+			});
+			
+			$("#shadows").click(function(){
+				document.body.className  = "lightBg";
+				$('.collectonme').hide();
+				$(document).snowfall('clear');
+				$(document).snowfall({shadow : true, flakeCount:200});
+			});
+
+			$("#roundshadows").click(function(){
+				document.body.className  = "lightBg";
+				$('.collectonme').hide();
+				$(document).snowfall('clear');
+				$(document).snowfall({shadow : true, round : true,  minSize: 5, maxSize:8}); 
+			});
+
+		});
+</script>
+</html>

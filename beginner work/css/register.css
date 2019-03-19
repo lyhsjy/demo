@@ -1,0 +1,226 @@
+/*
+* @Author: lyh
+* @Date:   2019-03-18 19:36:34
+* @Last Modified by:   lyh
+* @Last Modified time: 2019-03-18 19:37:00
+*/
+html,body{
+        		height: 100%;
+        	}
+        	.nav{
+			height: 30px;
+			width: 100%;
+			/* border: 1px solid #333; */
+			background-color: #ccc;
+			font-size:14px;
+		}
+			.nav .mid{
+				width: 1000px;
+				height: 30px;
+				margin:0 auto;
+			}
+			.weather{
+					float:left;
+					height: 30px;
+					line-height: 30px;
+				}
+			.weather :nth-child(2){
+					color:red;
+					cursor:pointer;
+				}
+			.dl{
+					float:right;
+					width: 200px;
+					height: 30px;
+					line-height: 30px;
+				}
+			.dl>.denglu,.dl>.zhuce,.dl>.shop{
+					float:left;
+				}
+			.shop{
+					margin-left:52px;
+					padding-right:30px;
+					background:url(images/购物车.png) no-repeat right center;
+					background-size:25px 25px ;
+				}
+			a{
+					text-decoration:none;
+				}
+			.dl a{
+					padding:2px;
+				}
+        	.all{
+        		width: 100%;
+        		height: 100%;
+        		position:relative;
+        	}
+        	.sea{
+				height: 180px;
+				width: 100%;
+				position:absolute;
+				left:0;
+				bottom:0;
+				/* border: 1px solid #000; */
+				overflow:hidden;
+			}
+			.bg1,.bg2{
+				/* height: 160px; */
+				position:absolute;
+				opacity:0.8;
+				width: 100%;
+			}
+			.bg1{
+				height: 160px;
+				background: linear-gradient(to top,rgba(255,255,255,0),rgba(255,255,255,0.6)),url(images/1.png);
+				animation:move1 2s linear infinite;
+				bottom:-20px;
+			}
+			.bg2{
+				height: 180px;
+				background: linear-gradient(to top,rgba(255,255,255,0),rgba(255,255,255,0.6)),url(images/2.png);
+				animation:move2 1s linear infinite;
+				bottom:-10px;
+			}
+			@keyframes move1{
+				0%{}
+				50%{
+					bottom:0px;
+				}
+				100%{}
+			}
+			@keyframes move2{
+				0%{}
+				50%{
+					bottom:0px;
+				}
+				100%{}
+			}
+        	*{
+        		margin:0;
+        		padding:0;
+        		border:0;
+        		list-style:none;
+        	}
+
+			.sky{
+				width: 100%;
+				height: 260px;
+				background-image: linear-gradient(to bottom,skyblue,white);
+				position:relative;
+				/* border: 1px solid #000; */
+			}
+			.sun{
+				width: 80px;
+				height: 80px;
+				border-radius:50%;
+				background-image: radial-gradient(50px at center center,orange,yellow);
+				position:absolute;
+				top:67px;
+				left:195px;
+			}
+			.sun::after,.sun::before{
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background-color: orange;
+				border-radius: 50%;
+				box-shadow:0 0 1px orange;
+			}
+			.sun::before {
+				animation: scale 1.3s infinite linear;
+			}
+			@keyframes scale{
+				0%{
+					
+				}
+				50%{
+					transform: scale(1.2);
+					opacity: 0.7;
+				}
+				100%{
+					
+				}
+			}
+			.register{
+				position:absolute;
+				margin-left:-200px;
+				left:50%;
+				top:150px;
+				width: 400px;
+				height: 200px;
+				border: 1px solid royalblue;
+				box-shadow:0 0 16px darkblue inset;
+				border-radius:24px;
+				
+			}
+			.register p{
+				margin-top:20px;
+				margin-left:70px;
+				width: 300px;
+				height: 40px;
+				line-height: 40px;
+				line-height: 40px;
+				position:relative;
+			}
+			.register p input{
+				width: 220px;
+				height: 36px;
+				border:1px solid lightblue;
+				border-radius:18px;
+			}
+			.register p:nth-child(2){
+				margin-top:10px;
+			}
+			.register p span{
+				float:left;
+				font-size:13px;
+				cursor:pointer;
+			}
+			.register p a{
+				text-decoration:none;
+				font-family:"微软雅黑";
+				font-size:15px;
+				margin-left:100px;
+				display:inline-block;
+				height: 30px;
+				width: 70px;
+				line-height: 30px;
+				text-align:center;
+				border-radius:15px;
+				color:white;
+				background-color: royalblue;
+			}
+			.register p img{
+				width: 25px;
+				height: 25px;
+				position:absolute;
+				top:6px;
+				left:-38px;
+			}
+			.login{
+				position:absolute;
+				margin-left:-200px;
+				left:50%;
+				top:370px;
+				width: 400px;
+				height: 36px;
+				line-height: 36px;
+				text-align:center;
+				border: 1px solid royalblue;
+				box-shadow:0 0 16px darkblue inset;
+				border-radius:18px;
+				font-family:"微软雅黑";
+			}
+			.all .login a{
+				display:block;
+				height: 36px;
+				width: 400px;
+				border-radius:18px;
+				font-family:"微软雅黑";
+				color:royalblue;
+        		text-decoration:none;
+        	}

@@ -1,0 +1,116 @@
+/*
+* @Author: lyh
+* @Date:   2019-03-18 19:35:45
+* @Last Modified by:   lyh
+* @Last Modified time: 2019-03-18 19:36:21
+*/
+*{
+		margin:0;
+		padding:0;
+		list-style:none;
+    }
+	body{
+		background: lightblue;
+	}
+
+	.nav{
+			height: 30px;
+			width: 100%;
+			/* border: 1px solid #333; */
+			background-color: #ccc;
+			font-size:14px;
+		}
+	.nav .mid{
+		width: 1000px;
+		height: 30px;
+		margin:0 auto;
+	}
+	.weather{
+			float:left;
+			height: 30px;
+			line-height: 30px;
+		}
+	.weather :nth-child(2){
+			color:red;
+			cursor:pointer;
+		}
+	.dl{
+			float:right;
+			width: 200px;
+			height: 30px;
+			line-height: 30px;
+		}
+	.dl>.denglu,.dl>.zhuce,.dl>.shop{
+			float:left;
+		}
+	.shop{
+			margin-left:52px;
+			padding-right:30px;
+			background:url(images/购物车.png) no-repeat right center;
+			background-size:25px 25px ;
+		}
+	a{
+			text-decoration:none;
+		}
+	.dl a{
+			padding:2px;
+		}
+    label {
+	        width: 80px;
+	        display: inline-block;
+    }
+    .container {
+	        margin: 150px auto;
+	        width: 400px;
+	        padding: 50px;
+	        line-height: 40px;
+	        border-radius:18px;
+	        box-shadow:0 0 16px #266883;
+	        background: skyblue;
+    }
+    .container span {
+	        margin-left: 15px;
+	        font-size: 12px;
+	        padding:2px 20px 0;
+	        color: darkgreen;
+    }
+	.container input{
+		cursor:text;
+		border-radius:12px;
+		height: 24px;
+	}
+    .wrong {
+        color: red;
+        background: url(images/error.png) no-repeat;   
+    }
+
+    .right {
+        color: green;
+        background: url(images/right.png) no-repeat;
+    }
+
+    .pwd {
+        width: 220px;
+        height: 20px;
+        background: url("images/strong.jpg") no-repeat;
+    }
+    .str1{
+        background-position: 0 -20px;
+    }
+    .str2{
+        background-position: 0 -40px;
+    }
+    .str3{
+        background-position: 0 -60px;
+    }
+    .str4{
+        background-position: 0 -80px;
+    }
+    button{
+    	width: 200px;
+    	height: 35px;
+    	margin:-90px auto;
+    	border-radius:15px;
+    	display:block;
+    	cursor:pointer;
+    }

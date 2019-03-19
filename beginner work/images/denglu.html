@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        	*{
+        		margin:0;
+        		padding:0;
+        	}
+			.current{
+				width:1000px;
+				margin:0 auto;
+			}
+			.nav{
+				height: 30px;
+				width: 100%;
+				border: 1px solid #000;
+			}
+			.weather{
+				float:left;
+				height: 30px;
+				line-height: 30px;
+
+			}
+			.dl{
+				float:right;
+				width: 200px;
+				height: 30px;
+				line-height: 30px;
+			}
+			.dl>.denglu,.dl>.zhuce,.dl>.shop{
+				float:left;
+			}
+			.shop{
+				margin-left:30px;
+				padding-right:30px;
+				background:url("images/购物车.png") no-repeat;
+				background-size:30px 30px ;
+			}
+			.ceshi{
+				width: 200px;
+				height: 200px;
+				background: url("耳机.png");
+			}
+        </style>
+    </head>
+    <body>
+    <!-- 导航栏 -->
+    	<div class="nav">
+    		<div class="current">
+	    		<div class="weather">
+	    			<span>重庆</span>[<span>切换城市</span>]
+	    		</div>
+	    		<div class="dl">
+	    			<div class="denglu"><span>登录</span>|</div>
+					<div class="zhuce">注册</div>
+					<div class="shop">购物车</div>
+	    		</div>
+    		</div>
+    	</div>
+    	<div class="ceshi"></div>
+    </body>
+</html>

@@ -1,0 +1,168 @@
+/*
+* @Author: lyh
+* @Date:   2019-03-18 19:33:59
+* @Last Modified by:   lyh
+* @Last Modified time: 2019-03-18 19:34:58
+*/
+*{  
+				padding:0; 
+				margin:0;
+				list-style:none; 
+				border:0;
+			}
+			body{
+				background-color: #83bbb9;
+			}
+			.nav{
+			height: 30px;
+			width: 100%;
+			/* border: 1px solid #333; */
+			background-color: #ccc;
+			font-size:14px;
+		}
+			.nav .mid{
+				width: 1000px;
+				height: 30px;
+				margin:0 auto;
+			}
+			.weather{
+					float:left;
+					height: 30px;
+					line-height: 30px;
+				}
+			.weather :nth-child(2){
+					color:red;
+					cursor:pointer;
+				}
+			.dl{
+					float:right;
+					width: 200px;
+					height: 30px;
+					line-height: 30px;
+				}
+			.dl>.denglu,.dl>.zhuce,.dl>.shop{
+					float:left;
+				}
+			.shop{
+					margin-left:52px;
+					padding-right:30px;
+					background:url(images/购物车.png) no-repeat right center;
+					background-size:25px 25px ;
+				}
+			a{
+					text-decoration:none;
+				}
+			.dl a{
+					padding:2px;
+				}
+			.business{
+				height: 500px;
+				width: 1000px;
+				margin:100px auto;
+				/* border:1px solid #000; */
+			}
+			.all,.screen,.screen li,.screen ul li img{
+				width: 300px;
+				height: 400px;
+			}
+			.all{
+				float:left;
+			    padding:7px;
+			    border:1px solid #ccc;
+			    position:relative;
+			}
+			.screen{
+				overflow:hidden; 
+				position:relative;
+			}
+			.screen li{ 
+				overflow:hidden; 
+				float:left;
+			}
+			.screen ul{ 
+				position:absolute; 
+				left:0; top:0px; 
+				width:3000px;
+			}
+			.all ol{ 
+				position:absolute; 
+				right:68px; 
+				bottom:2px; 
+				line-height:20px; 
+				text-align:center;
+			}
+			.all ol li{ 
+				float:left; 
+				width:20px; 
+				height:20px; 
+				background:#fff; 
+				border:1px solid #ccc; 
+				margin-left:10px; 
+				cursor:pointer;
+			}
+			.all ol li.current{ 
+				background:yellow;
+			}
+
+			#arr {
+				display: none;
+			}
+			#arr span{ 
+				width:40px; 
+				height:40px; 
+				position:absolute; 
+				left:5px; 
+				top:50%; 
+				margin-top:-20px;
+				background:#000; 
+				cursor:pointer; 
+				line-height:40px; 
+				text-align:center; 
+				font-weight:bold; 
+				font-family:'黑体'; 
+				font-size:30px; 
+				color:#fff; 
+				opacity:0.3; 
+				border:1px solid #fff;
+			}
+			#arr #right{
+				right:5px; 
+				left:auto;
+			}
+			.news{
+				float:right;
+				width: 600px;
+				margin-left:20px;
+				margin-top:30px;
+				/* border:1px solid #000; */
+			}
+			h1{
+				font-size:100%;
+				font-weight:normal;
+			}
+			.news p{
+				height: 45px;
+				line-height: 45px;
+			}
+			.news p .big{
+				font-weight:bold;
+				font-family:"微软雅黑";
+			}
+			.news .dollar{
+				color:red;
+			}
+			.news .dollar1{
+				font-weight:bold;
+			}
+			.news .mleft{
+				margin-left:14px;
+			}
+			.call{
+				margin-top:20px;
+				margin-left:30px;
+				height: 40px;
+				line-height: 40px;
+				width: 100px;
+				text-align:center;
+				background-color: orange;
+			}
